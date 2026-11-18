@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "visibian-brand-intelligence",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Your Visibian Brand Intelligence data in your AI assistant, through a read-only connector: visibility and share of voice against competitors, wrong facts in AI answers, the sources answers cite, answers that changed, and AI traffic, as briefs, fix plans and client reports. Requires a Visibian workspace with API access.",
   "author": {
     "name": "Visibian",

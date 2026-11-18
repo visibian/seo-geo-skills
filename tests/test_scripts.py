@@ -293,6 +293,7 @@ class SiteAudit(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.server.shutdown()
+        cls.server.server_close()
 
     def msgs(self):
         return " | ".join(f["message"] for f in self.audit["findings"])
@@ -495,6 +496,7 @@ class SearchConsole(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.server.shutdown()
+        cls.server.server_close()
 
     def setUp(self):
         import os
@@ -664,6 +666,7 @@ class Backlinks(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.server.shutdown()
+        cls.server.server_close()
         cls.dir.cleanup()
 
     def test_profile_from_three_layouts(self):

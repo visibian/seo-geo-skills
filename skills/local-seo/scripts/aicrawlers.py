@@ -122,6 +122,7 @@ def fetch(url):
                 return "html", "", f"{r.status}, {ctype or 'no content type'}, a web page instead of a robots.txt file"
             return "rules", body, f"{r.status}, {r.geturl()}"
     except urllib.error.HTTPError as e:
+        e.close()
         if e.code == 429 or e.code >= 500:
             return "unreachable", "", f"HTTP {e.code}"
         return "none", "", f"HTTP {e.code}"

@@ -281,6 +281,7 @@ class Polite:
                     else ""
                 return r.status, body, r.geturl()
         except urllib.error.HTTPError as e:
+            e.close()
             return e.code, "", url
         except Exception as e:
             return f"no answer ({type(e).__name__})", "", url

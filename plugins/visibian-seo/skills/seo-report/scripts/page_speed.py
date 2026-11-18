@@ -51,6 +51,7 @@ def fetch_psi(url, strategy, key=None):
             msg = json.load(e).get("error", {}).get("message", "")
         except Exception:
             msg = ""
+        e.close()
         if e.code == 429:
             return None, ("PageSpeed Insights answered 429: the shared quota is used up. Set PAGESPEED_API_KEY to a "
                           "free key of your own, or run Lighthouse locally and pass --file (see --help).")

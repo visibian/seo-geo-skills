@@ -52,6 +52,7 @@ def fetch(target, page, factor, periods, key):
             msg = json.load(e).get("error", {}).get("message", "")
         except Exception:
             msg = ""
+        e.close()
         if e.code == 404:
             return None, ("CrUX has no data for this " + ("page" if page else "site") + ": not enough Chrome users "
                           "visited it in the period. Try the whole site (drop --page), or use lab data from "

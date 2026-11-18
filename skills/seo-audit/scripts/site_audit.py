@@ -65,6 +65,7 @@ def fetch(url, limit=3 * 1024 * 1024, hops=10):
                 return {"status": r.status, "url": current, "chain": chain, "headers": dict(r.headers),
                         "ctype": ctype, "body": body.decode("utf-8", "replace")}
         except urllib.error.HTTPError as e:
+            e.close()
             if 300 <= e.code < 400 and e.headers.get("Location"):
                 nxt = urllib.parse.urljoin(current, e.headers["Location"])
                 chain.append((e.code, nxt))

@@ -85,6 +85,7 @@ def main(argv=None):
         try:
             status, ctype, text = fetch(url)
         except urllib.error.HTTPError as e:
+            e.close()
             print(f"{url}: HTTP {e.code}. There is no llms.txt at this address.")
             return 0
         except Exception as e:
@@ -113,6 +114,7 @@ def main(argv=None):
                 if status >= 400:
                     print(f"BROKEN   {url} ({status})")
             except urllib.error.HTTPError as e:
+                e.close()
                 print(f"BROKEN   {url} ({e.code})")
             except Exception as e:
                 print(f"BROKEN   {url} ({type(e).__name__})")

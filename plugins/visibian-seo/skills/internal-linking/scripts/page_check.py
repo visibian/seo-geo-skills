@@ -36,6 +36,7 @@ def get(url, limit=3 * 1024 * 1024):
             return {"status": r.status, "url": r.geturl(), "headers": dict(r.headers),
                     "body": r.read(limit).decode("utf-8", "replace")}
     except urllib.error.HTTPError as e:
+        e.close()
         return {"status": e.code, "url": url, "headers": dict(e.headers or {}), "body": ""}
     except Exception as e:
         return {"status": 0, "url": url, "headers": {}, "body": "", "error": f"{type(e).__name__}: {e}"}

@@ -63,6 +63,7 @@ def call(method, path, token, body=None):
             msg = json.load(e).get("error", {}).get("message", "")
         except Exception:
             msg = ""
+        e.close()
         hint = {401: "The token is missing, wrong or expired (tokens from the OAuth Playground last one hour).",
                 403: f"The token's account cannot read this property, or the token lacks the scope {SCOPE}.",
                 404: "Search Console does not know this property. Check its exact name with: gsc_api.py sites",
