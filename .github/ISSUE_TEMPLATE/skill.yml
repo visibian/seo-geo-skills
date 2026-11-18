@@ -1,0 +1,16 @@
+name: Suggest a skill or a check
+description: A job the skills should do, or a check they miss.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: job
+    attributes:
+      label: The job
+      description: Who needs it and what they would ask their assistant.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: The documentation or studies the skill would rely on, with their dates.

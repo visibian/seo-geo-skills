@@ -1,0 +1,270 @@
+{
+  "read": "2026-10-29",
+  "source": "https://visibianhq.com/research/crawlers/",
+  "crawlers": [
+    {
+      "token": "GPTBot",
+      "company": "OpenAI",
+      "product": "ChatGPT",
+      "kind": "train",
+      "does": "Collects pages that may be used to train OpenAI's AI models.",
+      "follows": "yes",
+      "blocking": "OpenAI reads it as a request not to use the site's pages to train its models. It does not keep a site out of ChatGPT search: that is OAI-SearchBot.",
+      "quote": "Disallowing GPTBot indicates a site's content should not be used in training generative AI foundation models.",
+      "doc": "https://developers.openai.com/api/docs/bots"
+    },
+    {
+      "token": "OAI-SearchBot",
+      "company": "OpenAI",
+      "product": "ChatGPT",
+      "kind": "search",
+      "does": "Finds the pages that ChatGPT search can show and link to.",
+      "follows": "yes",
+      "blocking": "The site's pages stop appearing in ChatGPT's search answers, though it can still appear as a plain link. OpenAI says changes take about 24 hours.",
+      "quote": "Sites that are opted out of OAI-SearchBot will not be shown in ChatGPT search answers, though can still appear as navigational links.",
+      "doc": "https://developers.openai.com/api/docs/bots"
+    },
+    {
+      "token": "ChatGPT-User",
+      "company": "OpenAI",
+      "product": "ChatGPT",
+      "kind": "user",
+      "does": "Opens a page when someone asks ChatGPT, or a custom GPT, about it.",
+      "follows": "not always",
+      "blocking": "It may still open a page a user asks for. It does not decide whether a site appears in ChatGPT search: OAI-SearchBot does.",
+      "quote": "Because these actions are initiated by a user, robots.txt rules may not apply.",
+      "doc": "https://developers.openai.com/api/docs/bots"
+    },
+    {
+      "token": "ClaudeBot",
+      "company": "Anthropic",
+      "product": "Claude",
+      "kind": "train",
+      "does": "Collects pages that may be used to train Anthropic's models.",
+      "follows": "yes",
+      "blocking": "Anthropic reads it as a signal that the site's future pages should be left out of training. Anthropic also honours Crawl-delay.",
+      "quote": "When a site restricts ClaudeBot access, it signals that the site's future materials should be excluded.",
+      "doc": "https://support.claude.com/en/articles/8896518"
+    },
+    {
+      "token": "Claude-SearchBot",
+      "company": "Anthropic",
+      "product": "Claude",
+      "kind": "search",
+      "does": "Reads pages to improve the search results in Claude.",
+      "follows": "yes",
+      "blocking": "Claude stops indexing the site for search, which Anthropic says may make it less visible and less accurate in Claude's search results.",
+      "quote": "Disabling Claude-SearchBot on your site prevents our system from indexing your content for search optimization.",
+      "doc": "https://support.claude.com/en/articles/8896518"
+    },
+    {
+      "token": "Claude-User",
+      "company": "Anthropic",
+      "product": "Claude",
+      "kind": "user",
+      "does": "Opens a page when a Claude user asks a question that needs it.",
+      "follows": "yes",
+      "blocking": "Claude can no longer fetch the site's pages for a user's question.",
+      "quote": "Disabling Claude-User on your site prevents our system from retrieving your content in response to a user query.",
+      "doc": "https://support.claude.com/en/articles/8896518"
+    },
+    {
+      "token": "Google-Extended",
+      "company": "Google",
+      "product": "Gemini",
+      "kind": "train",
+      "does": "A setting that tells Google whether pages Googlebot collects may be used to train Gemini models and to feed facts into Gemini's answers.",
+      "follows": "setting",
+      "blocking": "Google stops using the pages to train Gemini and to feed facts into its answers in the Gemini app and in Google's tools for developers. It does not change Google Search, AI Overviews or AI Mode, which follow the rules for Googlebot.",
+      "quote": "Google-Extended does not impact a site's inclusion in Google Search nor is it used as a ranking signal in Google Search.",
+      "doc": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers"
+    },
+    {
+      "token": "Googlebot",
+      "company": "Google",
+      "product": "Google Search, AI Overviews and AI Mode",
+      "kind": "search",
+      "does": "Crawls the web for Google Search, including AI Overviews and AI Mode.",
+      "follows": "yes",
+      "blocking": "The site drops out of Google Search, AI Overviews and AI Mode alike. To limit only what is shown, Google offers nosnippet, data-nosnippet, max-snippet and noindex.",
+      "quote": "To appear in AI Overviews or AI Mode, a page must be indexed and eligible to be shown in Google Search with a snippet.",
+      "doc": "https://developers.google.com/search/docs/appearance/ai-features"
+    },
+    {
+      "token": "Bingbot",
+      "company": "Microsoft",
+      "product": "Bing and Microsoft Copilot",
+      "kind": "search",
+      "does": "Crawls the web for Bing, whose index Microsoft Copilot answers from.",
+      "follows": "yes",
+      "blocking": "The site drops out of Bing. To stay in Bing but out of its AI answers, Bing offers the NOARCHIVE meta tag; NOCACHE lets only the link, title and snippet be used.",
+      "quote": "Content tagged NOARCHIVE will not be included in Bing Chat answers.",
+      "doc": "https://blogs.bing.com/webmaster/2023/9/Announcing-new-options-for-webmasters-to-control-usage-of-their-content-in-Bing-Chat/"
+    },
+    {
+      "token": "PerplexityBot",
+      "company": "Perplexity",
+      "product": "Perplexity",
+      "kind": "search",
+      "does": "Finds and links pages for Perplexity's search results. Perplexity says it is not used to train AI models.",
+      "follows": "yes",
+      "blocking": "Perplexity asks sites to allow it so that they appear in its search results. Changes can take up to 24 hours.",
+      "quote": "It is not used to crawl content for AI foundation models.",
+      "doc": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers"
+    },
+    {
+      "token": "Perplexity-User",
+      "company": "Perplexity",
+      "product": "Perplexity",
+      "kind": "user",
+      "does": "Opens a page when a Perplexity user asks a question that needs it.",
+      "follows": "not always",
+      "blocking": "It may still open a page a user asks for.",
+      "quote": "Since a user requested the fetch, this fetcher generally ignores robots.txt rules.",
+      "doc": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers"
+    },
+    {
+      "token": "Applebot-Extended",
+      "company": "Apple",
+      "product": "Apple Intelligence",
+      "kind": "train",
+      "does": "A setting that tells Apple whether it may use the pages Applebot collects to train its foundation models.",
+      "follows": "setting",
+      "blocking": "Apple stops using the pages for training. The site stays in Siri, Spotlight and Safari results, and the setting does not affect ranking.",
+      "quote": "Webpages that disallow Applebot-Extended can still be included in search results.",
+      "doc": "https://support.apple.com/en-us/119829"
+    },
+    {
+      "token": "Applebot",
+      "company": "Apple",
+      "product": "Siri, Spotlight and Safari",
+      "kind": "search",
+      "does": "Crawls for Siri, Spotlight and Safari, including answers that may link to the sources.",
+      "follows": "yes",
+      "blocking": "The site drops out of those results. If robots.txt does not name Applebot but names Googlebot, Applebot follows the rules for Googlebot.",
+      "quote": "Applebot respects standard robots.txt directives in general search crawls that are targeted at Applebot.",
+      "doc": "https://support.apple.com/en-us/119829"
+    },
+    {
+      "token": "meta-externalagent",
+      "company": "Meta",
+      "product": "Meta AI",
+      "kind": "train",
+      "does": "Collects pages for uses such as training Meta's AI models or indexing content for its products.",
+      "follows": "yes",
+      "blocking": "Meta stops collecting the site's pages. Meta says it may cache robots.txt for up to 24 hours.",
+      "quote": "crawls the web for use cases such as training foundation AI models or improving products by indexing content directly.",
+      "doc": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers"
+    },
+    {
+      "token": "meta-webindexer",
+      "company": "Meta",
+      "product": "Meta AI",
+      "kind": "search",
+      "does": "Reads pages to improve Meta AI's search results.",
+      "follows": "yes",
+      "blocking": "Meta says allowing it helps Meta AI cite and link to your pages, so blocking it can cost those links.",
+      "quote": "navigates the web to improve Meta AI search result quality for users.",
+      "doc": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers"
+    },
+    {
+      "token": "meta-externalfetcher",
+      "company": "Meta",
+      "product": "Meta AI",
+      "kind": "user",
+      "does": "Opens a link when a user asks Meta AI about it.",
+      "follows": "not always",
+      "blocking": "It may still open a page a user asks for.",
+      "quote": "may bypass robots.txt rules",
+      "doc": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers"
+    },
+    {
+      "token": "Amazonbot",
+      "company": "Amazon",
+      "product": "Alexa",
+      "kind": "train",
+      "does": "Collects pages to improve Amazon's products and services, and may be used to train Amazon's AI models.",
+      "follows": "yes",
+      "blocking": "Amazon stops collecting the site's pages. Amazon also honours the noarchive meta tag, which keeps a page out of model training, and caches robots.txt for up to 30 days.",
+      "quote": "may be used to train Amazon AI models.",
+      "doc": "https://developer.amazon.com/docs/amazonbot/amazonbot.html"
+    },
+    {
+      "token": "Amzn-SearchBot",
+      "company": "Amazon",
+      "product": "Alexa",
+      "kind": "search",
+      "does": "Reads pages for search in Amazon's products, such as Alexa. Amazon says it is not used for training.",
+      "follows": "yes",
+      "blocking": "The site's pages are no longer eligible for Amazon's search experiences. If robots.txt does not name it, it follows the rules given to other search crawlers.",
+      "quote": "Amzn-SearchBot does not crawl content for generative AI model training.",
+      "doc": "https://developer.amazon.com/docs/amazonbot/amazonbot.html"
+    },
+    {
+      "token": "Amzn-User",
+      "company": "Amazon",
+      "product": "Alexa",
+      "kind": "user",
+      "does": "Opens a page when a customer asks Alexa something that needs up-to-date information.",
+      "follows": "not always",
+      "blocking": "It may still open a page a customer asks for.",
+      "quote": "it may not follow all robots.txt directives.",
+      "doc": "https://developer.amazon.com/docs/amazonbot/amazonbot.html"
+    },
+    {
+      "token": "MistralAI-Training",
+      "company": "Mistral",
+      "product": "Le Chat",
+      "kind": "train",
+      "does": "Collects pages to build datasets for training Mistral's AI models.",
+      "follows": "yes",
+      "blocking": "Mistral stops collecting the site's pages for training.",
+      "quote": "Webmasters can disallow this user agent in their robots.txt file.",
+      "doc": "https://docs.mistral.ai/robots"
+    },
+    {
+      "token": "MistralAI-Index",
+      "company": "Mistral",
+      "product": "Le Chat",
+      "kind": "search",
+      "does": "Crawls the web to build Mistral's index, for search in its products.",
+      "follows": "yes",
+      "blocking": "Mistral stops indexing the site. Its page does not say more.",
+      "quote": "MistralAI-Index is for automated crawling of the web for indexing purposes only.",
+      "doc": "https://docs.mistral.ai/robots"
+    },
+    {
+      "token": "MistralAI-User",
+      "company": "Mistral",
+      "product": "Le Chat",
+      "kind": "user",
+      "does": "Opens pages for actions a user asks for in Mistral's products.",
+      "follows": "not always",
+      "blocking": "Mistral's page does not say whether these fetches follow robots.txt.",
+      "quote": "MistralAI-User is for user actions in Vibe.",
+      "doc": "https://docs.mistral.ai/robots"
+    },
+    {
+      "token": "DuckAssistBot",
+      "company": "DuckDuckGo",
+      "product": "DuckDuckGo AI answers",
+      "kind": "search",
+      "does": "Reads pages in real time for DuckDuckGo's AI answers, which cite their sources. DuckDuckGo says it is not used to train AI.",
+      "follows": "yes",
+      "blocking": "DuckDuckGo stops crawling the site for AI answers within 72 hours. The site's ranking in ordinary results does not change.",
+      "quote": "This data is not used in any way to train AI models.",
+      "doc": "https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot"
+    },
+    {
+      "token": "CCBot",
+      "company": "Common Crawl",
+      "product": "Common Crawl's public archive",
+      "kind": "archive",
+      "does": "Builds Common Crawl's open archive of the web. Many AI models have been trained on that archive, GPT-3 among them.",
+      "follows": "yes",
+      "blocking": "The site's pages stop being added to the archive. Pages already in it stay there.",
+      "quote": "producing and maintaining an open repository of web crawl data",
+      "doc": "https://commoncrawl.org/ccbot"
+    }
+  ]
+}

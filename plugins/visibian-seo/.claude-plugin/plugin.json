@@ -1,0 +1,43 @@
+{
+  "name": "visibian-seo",
+  "displayName": "Visibian SEO & GEO",
+  "version": "1.0.0",
+  "description": "Free SEO, GEO and AEO skills: crawl, audit and monitor a site, live Search Console data and keyword research, backlinks, on-page optimization, content briefs, internal links, Core Web Vitals, hreflang, local and ecommerce SEO, structured data, client reports, and pages readable and quotable for ChatGPT, Claude, Gemini, Perplexity and Google's AI Overviews. No account needed.",
+  "author": {
+    "name": "Visibian",
+    "email": "support@visibian.com",
+    "url": "https://visibian.com"
+  },
+  "homepage": "https://visibian.com",
+  "repository": "https://github.com/visibian/seo-geo-skills",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "geo",
+    "aeo",
+    "ai-search",
+    "seo-audit",
+    "technical-seo",
+    "keyword-research",
+    "on-page-seo",
+    "search-console",
+    "backlinks",
+    "seo-monitoring",
+    "content-brief",
+    "internal-linking",
+    "core-web-vitals",
+    "hreflang",
+    "local-seo",
+    "ecommerce-seo",
+    "structured-data",
+    "schema",
+    "llms-txt",
+    "ai-visibility",
+    "generative-engine-optimization"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://docs.visibian.com/developers.html",
+  "supportUrl": "https://visibian.com/contact.html",
+  "privacyPolicyUrl": "https://visibian.com/privacy.html",
+  "termsOfServiceUrl": "https://visibian.com/terms.html"
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "visibian-brand-intelligence",
+  "version": "1.0.0",
+  "description": "Your Visibian Brand Intelligence data in your AI assistant, through a read-only connector: visibility and share of voice against competitors, wrong facts in AI answers, the sources answers cite, answers that changed, and AI traffic, as briefs, fix plans and client reports. Requires a Visibian workspace with API access.",
+  "author": {
+    "name": "Visibian",
+    "email": "support@visibian.com",
+    "url": "https://visibian.com"
+  },
+  "homepage": "https://visibian.com",
+  "repository": "https://github.com/visibian/seo-geo-skills",
+  "license": "MIT",
+  "keywords": [
+    "ai-visibility",
+    "brand-monitoring",
+    "geo",
+    "aeo",
+    "chatgpt",
+    "share-of-voice",
+    "competitors",
+    "hallucinations",
+    "ai-search",
+    "agency-reporting",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Visibian Brand Intelligence",
+        "shortDescription": "Your AI visibility data",
+        "longDescription": "Connects your assistant to your Visibian workspace through Visibian's read-only connector, with eight skills that turn the data into work.\n\n- A weekly or monthly brief against competitors.\n- Where competitors gained on you, by assistant, country and topic.\n- Wrong facts in AI answers, traced to their source, with a plan to correct them.\n- The pages answers cite where competitors appear and you do not.\n- Answers that changed, and what changed alongside them.\n- Visits and crawler fetches from AI services.\n- Monthly reports for agency clients.\n\nEvery number is reported as Visibian returns it, with its date range. The connector only reads; it cannot change anything in your account. It requires a plan with API access and a token from Settings, API & MCP access.",
+        "developerName": "Visibian",
+        "category": "Productivity",
+        "capabilities": [
+          "Read AI visibility and share of voice",
+          "Compare competitors by assistant and topic",
+          "Plan fixes for wrong facts",
+          "Find source gaps",
+          "Review answers that changed",
+          "Read AI traffic",
+          "Draft client reports"
+        ],
+        "websiteURL": "https://visibian.com",
+        "supportURL": "https://visibian.com/contact.html",
+        "privacyPolicyURL": "https://visibian.com/privacy.html",
+        "termsOfServiceURL": "https://visibian.com/terms.html",
+        "defaultPrompt": [
+          "What changed in our AI visibility this month?",
+          "Which competitors gained on us in ChatGPT?",
+          "What do AI answers get wrong about us, and where does it come from?"
+        ],
+        "brandColor": "#7C3AED",
+        "brandColorDark": "#A78BFA",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "publication": {
+        "release_notes": "First release."
+      },
+      "onboardingSkill": "./skills/connect-visibian/SKILL.md"
+    }
+  }
+}

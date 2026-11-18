@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.0 256.0">
+  <defs>
+    <radialGradient id="au1" cx="0.78" cy="0.88" r="0.95">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.95"/>
+      <stop offset="0.62" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="au2" cx="0.14" cy="0.08" r="0.70">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.45"/>
+      <stop offset="0.55" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="0.25" stop-color="#FFFFFF" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="256.0" height="256.0" rx="61.44" fill="#131039"/>
+  <rect width="256.0" height="256.0" rx="61.44" fill="url(#au1)"/>
+  <rect width="256.0" height="256.0" rx="61.44" fill="url(#au2)"/>
+  <rect width="256.0" height="256.0" rx="61.44" fill="url(#edge)"/>
+  <path fill="#FFFFFF" d="M158.3435 80.2425 129.09349999999998 164.0925H102.84349999999999L73.6685 80.2425H98.19349999999999L115.81849999999999 140.3175H116.71849999999998L134.0435 80.2425Z"/>
+  <path fill="#D8CCFE" d="M169.1315 165.5175Q163.58149999999998 165.5175 159.75649999999996 161.7675Q155.93149999999997 158.0175 155.93149999999997 152.4675Q155.93149999999997 146.9175 159.75649999999996 143.1675Q163.58149999999998 139.4175 169.1315 139.4175Q174.68149999999997 139.4175 178.50649999999996 143.1675Q182.33149999999998 146.9175 182.33149999999998 152.4675Q182.33149999999998 158.0175 178.50649999999996 161.7675Q174.68149999999997 165.5175 169.1315 165.5175Z"/>
+</svg>

@@ -1,0 +1,25 @@
+{
+  "name": "visibian",
+  "owner": {
+    "name": "Visibian",
+    "email": "support@visibian.com"
+  },
+  "metadata": {
+    "description": "Visibian's plugins for SEO and AI search (GEO, AEO).",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "visibian-seo",
+      "description": "Free SEO, GEO and AEO skills: crawl, audit and monitor a site, live Search Console data and keyword research, backlinks, on-page optimization, content briefs, internal links, Core Web Vitals, hreflang, local and ecommerce SEO, structured data, client reports, and pages readable and quotable for ChatGPT, Claude, Gemini, Perplexity and Google's AI Overviews. No account needed.",
+      "version": "1.0.0",
+      "source": "./plugins/visibian-seo"
+    },
+    {
+      "name": "visibian-brand-intelligence",
+      "description": "Your Visibian Brand Intelligence data in your AI assistant, through a read-only connector: visibility and share of voice against competitors, wrong facts in AI answers, the sources answers cite, answers that changed, and AI traffic, as briefs, fix plans and client reports. Requires a Visibian workspace with API access.",
+      "version": "1.0.0",
+      "source": "./plugins/visibian-brand-intelligence"
+    }
+  ]
+}

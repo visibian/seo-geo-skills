@@ -1,0 +1,84 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "visibian-seo",
+  "version": "1.0.0",
+  "description": "Free SEO, GEO and AEO skills: crawl, audit and monitor a site, live Search Console data and keyword research, backlinks, on-page optimization, content briefs, internal links, Core Web Vitals, hreflang, local and ecommerce SEO, structured data, client reports, and pages readable and quotable for ChatGPT, Claude, Gemini, Perplexity and Google's AI Overviews. No account needed.",
+  "author": {
+    "name": "Visibian",
+    "email": "support@visibian.com",
+    "url": "https://visibian.com"
+  },
+  "homepage": "https://visibian.com",
+  "repository": "https://github.com/visibian/seo-geo-skills",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "geo",
+    "aeo",
+    "ai-search",
+    "seo-audit",
+    "technical-seo",
+    "keyword-research",
+    "on-page-seo",
+    "search-console",
+    "backlinks",
+    "seo-monitoring",
+    "content-brief",
+    "internal-linking",
+    "core-web-vitals",
+    "hreflang",
+    "local-seo",
+    "ecommerce-seo",
+    "structured-data",
+    "schema",
+    "llms-txt",
+    "ai-visibility",
+    "generative-engine-optimization"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Visibian SEO & GEO",
+        "shortDescription": "SEO, GEO and AEO toolkit",
+        "longDescription": "Visibian's free toolkit for search engine optimization and AI search (GEO and AEO): 24 skills for the part of search a site owner controls, each built on tested scripts and on the search engines' own documentation, with every source dated.\n\n- Crawl and audit a site: broken links, redirects, titles, canonicals, noindex, sitemap, orphan pages, structured data and AI crawler access, with a fix list by priority.\n- Monitor the site: compare each crawl with the last and catch pages lost, new noindex tags, changed canonicals and AI crawlers shut out.\n- Search Console, live through its API or from exports: keyword research with quick wins, low click-through, questions and declines; index status of each page; sitemap errors.\n- Backlinks from free exports: linking sites, anchors, links that still exist, broken pages to reclaim, and the sites that link to competitors.\n- Optimize pages, write content briefs, and make each section quotable in AI answers.\n- Internal linking, Core Web Vitals with their history, hreflang, local SEO, ecommerce SEO, JSON-LD and llms.txt.\n- Client-ready reports for agencies, as one HTML file.\n\nLimits: the skills read pages, files and exports; they do not measure what assistants say about your brand, and no change guarantees a ranking or a citation. Scripts run locally with the Python standard library and fetch only the pages you point them at, and Google's APIs with your own key or token.",
+        "developerName": "Visibian",
+        "category": "Productivity",
+        "capabilities": [
+          "Crawl and audit a site for SEO and AI search",
+          "Monitor a site for SEO changes",
+          "Read Search Console live",
+          "Research keywords from Search Console",
+          "Audit backlinks",
+          "Optimize a page for a query",
+          "Write content briefs",
+          "Fix internal links",
+          "Check Core Web Vitals",
+          "Check hreflang",
+          "Local and ecommerce SEO",
+          "Write and validate JSON-LD",
+          "Make pages quotable in AI answers (GEO)",
+          "Check AI crawler access",
+          "Write llms.txt",
+          "Set up AI traffic reports",
+          "Build client-ready SEO reports"
+        ],
+        "websiteURL": "https://visibian.com",
+        "supportURL": "https://visibian.com/contact.html",
+        "privacyPolicyURL": "https://visibian.com/privacy.html",
+        "termsOfServiceURL": "https://visibian.com/terms.html",
+        "defaultPrompt": [
+          "Run an SEO and AI search audit of my website.",
+          "Which keywords should I target? Here is my Search Console export.",
+          "Make this page easier for ChatGPT and Google's AI Overviews to quote."
+        ],
+        "brandColor": "#7C3AED",
+        "brandColorDark": "#A78BFA",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "publication": {
+        "release_notes": "First release."
+      }
+    }
+  }
+}

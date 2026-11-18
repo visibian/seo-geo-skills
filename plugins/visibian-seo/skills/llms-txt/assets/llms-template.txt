@@ -1,0 +1,25 @@
+# Example Co
+
+> Example Co makes scheduling software for dental clinics in the US and Canada, sold by monthly subscription.
+
+Prices on this site are in US dollars and include all features of each plan. The documentation covers the web app and the API.
+
+## Product
+
+- [Home](https://example.com/): what the software does and who it is for
+- [Pricing](https://example.com/pricing): the three plans, their prices and limits
+- [Integrations](https://example.com/integrations): the practice management systems it connects to
+
+## Documentation
+
+- [Getting started](https://docs.example.com/start): set up a clinic in five steps
+- [API reference](https://docs.example.com/api): endpoints, authentication and rate limits
+
+## Company
+
+- [About](https://example.com/about): founders, location and history
+- [Contact](https://example.com/contact): support and sales addresses
+
+## Optional
+
+- [Blog](https://example.com/blog): articles on running a dental practice

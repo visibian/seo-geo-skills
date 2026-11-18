@@ -1,0 +1,5 @@
+# Sources
+
+- llmstxt.org, "The /llms.txt file, v2", Jeremy Howard (first version 3 September 2024; v2 read 5 November 2026). The format, the `.md` page copies, and the note that the AI labs publish llms.txt files for their own developer docs and that Chrome's Lighthouse audits for one. https://llmstxt.org/
+- Google Search Central, "Optimizing your website for generative AI features on Google Search", updated 10 July 2026: "You don't need to create new machine readable files, AI text files, markup, or Markdown to appear in Google Search (including its generative AI capabilities), as Google Search itself doesn't use them." Creating llms.txt for other services "will neither harm nor help your site's visibility or rankings in Google Search". https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
+- Google Search Central, documentation updates, 15 June 2026: the note clarifying Google Search's use of llms.txt files was added to that guide. https://developers.google.com/search/updates
